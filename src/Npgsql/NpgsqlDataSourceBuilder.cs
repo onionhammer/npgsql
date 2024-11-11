@@ -122,6 +122,11 @@ public sealed class NpgsqlDataSourceBuilder : INpgsqlTypeMapper
     }
 
     /// <summary>
+    /// Options for configuring Npgsql type loading.
+    /// </summary>
+    public NpgsqlTypeLoadingOptions TypeLoading => _internalBuilder.TypeLoading;
+
+    /// <summary>
     /// Configures tracing options for the DataSource.
     /// </summary>
     /// <param name="tracingOptions">Tracing options for the DataSource.</param>
