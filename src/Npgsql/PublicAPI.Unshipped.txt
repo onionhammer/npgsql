@@ -5,6 +5,7 @@ Npgsql.NpgsqlConnection.SslClientAuthenticationOptionsCallback.get -> System.Act
 Npgsql.NpgsqlConnection.SslClientAuthenticationOptionsCallback.set -> void
 Npgsql.NpgsqlConnectionStringBuilder.SslNegotiation.get -> Npgsql.SslNegotiation
 Npgsql.NpgsqlConnectionStringBuilder.SslNegotiation.set -> void
+Npgsql.NpgsqlDataSourceBuilder.ConfigureTypeLoading(System.Action<Npgsql.NpgsqlTypeLoadingOptionsBuilder!>! configureAction) -> Npgsql.NpgsqlDataSourceBuilder!
 Npgsql.NpgsqlDataSourceBuilder.MapComposite(System.Type! clrType, string? pgName = null, Npgsql.INpgsqlNameTranslator? nameTranslator = null) -> Npgsql.NpgsqlDataSourceBuilder!
 Npgsql.NpgsqlDataSourceBuilder.MapComposite<T>(string? pgName = null, Npgsql.INpgsqlNameTranslator? nameTranslator = null) -> Npgsql.NpgsqlDataSourceBuilder!
 Npgsql.NpgsqlDataSourceBuilder.MapEnum(System.Type! clrType, string? pgName = null, Npgsql.INpgsqlNameTranslator? nameTranslator = null) -> Npgsql.NpgsqlDataSourceBuilder!
@@ -15,6 +16,7 @@ Npgsql.NpgsqlDataSourceBuilder.UseSslClientAuthenticationOptionsCallback(System.
 Npgsql.NpgsqlMetricsOptions
 Npgsql.NpgsqlMetricsOptions.NpgsqlMetricsOptions() -> void
 Npgsql.NpgsqlSlimDataSourceBuilder.ConfigureTracingOptions(Npgsql.NpgsqlTracingOptions! tracingOptions) -> Npgsql.NpgsqlSlimDataSourceBuilder!
+Npgsql.NpgsqlSlimDataSourceBuilder.ConfigureTypeLoading(System.Action<Npgsql.NpgsqlTypeLoadingOptionsBuilder!>! configureAction) -> Npgsql.NpgsqlSlimDataSourceBuilder!
 Npgsql.NpgsqlSlimDataSourceBuilder.EnableGeometricTypes() -> Npgsql.NpgsqlSlimDataSourceBuilder!
 Npgsql.NpgsqlSlimDataSourceBuilder.EnableJsonTypes() -> Npgsql.NpgsqlSlimDataSourceBuilder!
 Npgsql.NpgsqlSlimDataSourceBuilder.EnableNetworkTypes() -> Npgsql.NpgsqlSlimDataSourceBuilder!
@@ -38,6 +40,9 @@ Npgsql.NpgsqlTracingOptions.ProvideSpanNameForBatch.get -> System.Func<Npgsql.Np
 Npgsql.NpgsqlTracingOptions.ProvideSpanNameForBatch.set -> void
 Npgsql.NpgsqlTracingOptions.ProvideSpanNameForCommand.get -> System.Func<Npgsql.NpgsqlCommand!, string?>?
 Npgsql.NpgsqlTracingOptions.ProvideSpanNameForCommand.set -> void
+Npgsql.NpgsqlTypeLoadingOptionsBuilder
+Npgsql.NpgsqlTypeLoadingOptionsBuilder.EnableTableCompositesLoading(bool enable = true) -> Npgsql.NpgsqlTypeLoadingOptionsBuilder!
+Npgsql.NpgsqlTypeLoadingOptionsBuilder.SetServerCompatibilityMode(Npgsql.ServerCompatibilityMode serverCompatibilityMode = Npgsql.ServerCompatibilityMode.None) -> Npgsql.NpgsqlTypeLoadingOptionsBuilder!
 Npgsql.Replication.PgOutput.ReplicationValue.GetFieldName() -> string!
 Npgsql.Replication.PgOutput.Messages.ParallelStreamAbortMessage
 Npgsql.Replication.PgOutput.Messages.ParallelStreamAbortMessage.AbortLsn.get -> NpgsqlTypes.NpgsqlLogSequenceNumber
